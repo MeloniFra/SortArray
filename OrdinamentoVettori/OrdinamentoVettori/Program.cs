@@ -6,18 +6,20 @@ namespace OrdinamentoVettori
     {
         static void Main(string[] args)
         {
+            //Creazione del vettore
             int [] vettore = new int [10] { 11, 55, -9, 7, 74, 147, -87, 6, 0, 18};
-
-
-            ordina(vettore);
-
+            //Ordinamento del vettore
+            Ordina(vettore);
+            //Stampa del vettore
             for (int i = 0; i < 10; i++)
+            {
                 Console.WriteLine(vettore[i]);
+            }
 
             Console.ReadKey();
         }
 
-        static void ordina (int[] vettore)
+        static void Ordina (int[] vettore)//Metodo dell'ordinamento del vettore
         {
             Array.Sort(vettore);
         }
